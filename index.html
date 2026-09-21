@@ -388,6 +388,60 @@
     </div>
 
   </footer>
+
+  <!-- modal window -->
+  <div class="backdrop is-open">
+    <div class="modal">
+      <button>
+        <svg width="8" height="8">
+          <use href="./images/icons.svg#close"></use>
+        </svg>
+      </button>
+      <p>Leave your contacts and we will call you back</p>
+      <form class="modal-form" name="review_form">
+        <div class="modal-form-field">
+          <label for="user_name" class="modal-form-label">Name</label>
+          <div class="modal-form-wrapper">
+            <input type="text" class="modal-form-input" name="user_name" id="user_name">
+            <svg class="modal-form-icon" width="18" height="18">
+              <use href="./images/icons.svg#person"></use>
+            </svg>
+          </div>
+        </div>
+        <div class="modal-form-field">
+          <label for="user_phone" class="modal-form-label">Phone</label>
+          <div class="modal-form-wrapper">
+            <input type="tel" class="modal-form-input" name="user_phone" id="user_phone">
+            <svg class="modal-form-icon" width="18" height="18">
+              <use href="./images/icons.svg#phone"></use>
+            </svg>
+          </div>
+        </div>
+        <div class="modal-form-field">
+          <label for="user_email" class="modal-form-label">Email</label>
+          <div class="modal-form-wrapper">
+            <input type="email" class="modal-form-input" name="user_email" id="user_email">
+            <svg class="modal-form-icon" width="18" height="18">
+              <use href="./images/icons.svg#email"></use>
+            </svg>
+          </div>
+        </div>
+        <modal-form-field><label for="user_comment" class="modal-form-label">Comment</label>
+          <textarea name="user_comment" id="user_comment" class="modal-form-comment" placeholder="Enter text">
+          </textarea>
+        </modal-form-field>
+        <div class="modal-form-field"><input type="checkbox" name="user_police" id="user_police"><label
+            for="user_police"></label>
+          <span>
+            <svg width="9" height="9">
+              <use href="./images/icons.svg#check"></use>
+            </svg>
+          </span>I accept the terms and conditions of the <a href="#" class="accent" target="_blank"
+            rel="noopener noreferrer">Privacy Policy</a>
+        </div>
+      </form>
+    </div>
+  </div>
 </body>
 
 </html>
