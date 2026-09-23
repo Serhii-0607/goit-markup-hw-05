@@ -384,6 +384,16 @@
             </li>
           </ul>
         </div>
+        <div class="footer-form-wrapper">
+          <p class="form-title">Subscribe</p>
+          <form class="footer-form" name="subscription">
+            <input class="footer-form-input" type="email" name="user_subscription" placeholder="E-mail">
+            <button class="footer-btn" type="submit">Subscrible <svg class="footer-btn" width="24" height="24">
+                <use href="./images/icons.svg#send"></use>
+              </svg> </button>
+
+          </form>
+        </div>
       </div>
     </div>
 
@@ -392,12 +402,12 @@
   <!-- modal window -->
   <div class="backdrop is-open">
     <div class="modal">
-      <button>
-        <svg width="8" height="8">
+      <button class="modal-btn" type="button" aria-label="Close modal button">
+        <svg class="modal-btn-icon" width="8" height="8">
           <use href="./images/icons.svg#close"></use>
         </svg>
       </button>
-      <p>Leave your contacts and we will call you back</p>
+      <p class="modal-caption">Leave your contacts and we will call you back</p>
       <form class="modal-form" name="review_form">
         <div class="modal-form-field">
           <label for="user_name" class="modal-form-label">Name</label>
@@ -426,19 +436,20 @@
             </svg>
           </div>
         </div>
-        <modal-form-field><label for="user_comment" class="modal-form-label">Comment</label>
-          <textarea name="user_comment" id="user_comment" class="modal-form-comment" placeholder="Enter text">
-          </textarea>
-        </modal-form-field>
-        <div class="modal-form-field"><input type="checkbox" name="user_police" id="user_police"><label
+        <div class="modal-form-field comment-field"><label for="user_comment" class="modal-form-label">Comment</label>
+          <textarea name="user_comment" id="user_comment" class="modal-form-comment" placeholder="Enter text"
+            cols="5"></textarea>
+        </div>
+        <div class="modal-form-agreement"><input type="checkbox" name="user_police" id="user_police"><label
             for="user_police"></label>
           <span>
             <svg width="9" height="9">
               <use href="./images/icons.svg#check"></use>
             </svg>
-          </span>I accept the terms and conditions of the <a href="#" class="accent" target="_blank"
-            rel="noopener noreferrer">Privacy Policy</a>
+          </span>I accept the terms and conditions of the <a class="agreement-link" href="#" class="accent"
+            target="_blank" rel="noopener noreferrer">Privacy Policy</a>
         </div>
+        <button class="hero-btn form-btn" type="submit">Send</button>
       </form>
     </div>
   </div>
