@@ -175,7 +175,6 @@
 }
 
 .agreement-link {
- line-height: 1.33333;
  text-decoration: underline;
  color: #4d5ae5;
 }
@@ -186,7 +185,7 @@
 
 .modal-form-policy {
  font-size: 12px;
- line-height: 1.167;
+ line-height: 1.17;
  letter-spacing: 0.04em;
  color: #8e8f99;
 }
