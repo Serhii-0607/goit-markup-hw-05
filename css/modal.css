@@ -162,11 +162,6 @@
 
 .modal-form-agreement {
  margin-bottom: 22px;
-
- font-size: 12px;
- line-height: 1.167;
- letter-spacing: 0.04em;
- color: #8e8f99;
 }
 
 .agreement-link {
@@ -177,4 +172,46 @@
 
 .form-btn {
  width: 169px;
+}
+
+.modal-form-policy {
+ font-size: 12px;
+ line-height: 1.167;
+ letter-spacing: 0.04em;
+ color: #8e8f99;
+}
+
+.modal-form-checkbox {
+ display: inline-flex;
+ justify-content: center;
+ align-items: center;
+
+ width: 14px;
+ height: 14px;
+ margin-right: 8px;
+
+
+ border-radius: 2px;
+ border: 0.88px solid rgba(46, 47, 66, 0.4);
+ cursor: pointer;
+}
+
+.checkbox:checked+.modal-form-policy>.modal-form-checkbox {
+ border-color: transparent;
+ background-color: #404bbf;
+}
+
+.checkbox:checked+.modal-form-policy>.modal-form-checkbox .modal-form-checkbox-icon {
+ opacity: 1;
+}
+
+.checkbox:focus-visible+.modal-form-policy>.modal-form-checkbox {
+ outline: auto;
+ outline-offset: 4px;
+ border-radius: 4px;
+}
+
+.modal-form-checkbox-icon {
+ color: #fff;
+ opacity: 0;
 }
